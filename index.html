@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción al torneo · Nexo Arena</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header><nav><a class="brand" href="index.html"><i aria-hidden="true">N</i> NEXO <em>ARENA</em></a><a href="normas.html">Normas del torneo ↗</a></nav></header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">NEXO OPEN / ESPORTS</span><h1>Inscripción<br>al <em>torneo.</em></h1><p>Prepara tu perfil y elige cómo vas a competir.</p></div>
+  <div class="arte" aria-hidden="true">🏆</div>
+</section>
+<dialog open aria-label="Formulario de inscripción">
+  <form method="dialog">
+    <div class="nota">Los campos con <b>*</b> son obligatorios.</div>
+    <fieldset><legend><small>01</small> Datos personales</legend>
+      <div class="columnas">
+        <div><label for="nombre">Nombre completo <b>*</b></label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre y apellidos" required></div>
+        <div><label for="correo">Correo electrónico <b>*</b></label>
+          <input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@ejemplo.com" required></div>
+        <div><label for="edad">Edad <b>*</b></label>
+          <input id="edad" name="edad" type="number" min="16" step="1" placeholder="Mínimo 16 años" required></div>
+        <div><label for="nacimiento">Fecha de nacimiento</label>
+          <input id="nacimiento" name="nacimiento" type="date" autocomplete="bday"></div>
+      </div>
+    </fieldset>
+    <fieldset><legend><small>02</small> Perfil de jugador</legend>
+      <div class="columnas">
+        <div><label for="nickname">Nombre del jugador (nickname) <b>*</b></label>
+          <input id="nickname" name="nickname" type="text" minlength="3" maxlength="15" autocomplete="nickname" placeholder="Entre 3 y 15 caracteres" required></div>
+        <div><label for="clave">Contraseña de la cuenta <b>*</b></label>
+          <input id="clave" name="clave" type="password" autocomplete="new-password" placeholder="Crea una contraseña" required></div>
+      </div>
+    </fieldset>
+    <fieldset><legend><small>03</small> Preferencias de juego</legend>
+      <label for="juego">Videojuego del torneo <b>*</b></label>
+      <select id="juego" name="juego" required>
+        <option value="">Selecciona tu videojuego</option>
+        <option>Rocket League</option><option>Fortnite</option><option>Street Fighter 6</option><option>Overwatch 2</option>
+      </select>
+      <fieldset class="grupo"><legend>Plataforma <b>*</b></legend><div class="opciones">
+        <label class="opcion" for="pc"><input type="radio" id="pc" name="plataforma" value="pc" required> PC</label>
+        <label class="opcion" for="playstation"><input type="radio" id="playstation" name="plataforma" value="playstation" required> PlayStation</label>
+        <label class="opcion" for="xbox"><input type="radio" id="xbox" name="plataforma" value="xbox" required> Xbox</label>
+      </div></fieldset>
+      <fieldset class="grupo"><legend>Disponibilidad horaria <span>(puedes elegir varias)</span></legend><div class="opciones">
+        <label class="opcion" for="manana"><input type="checkbox" id="manana" name="horario" value="manana"> Mañana</label>
+        <label class="opcion" for="tarde"><input type="checkbox" id="tarde" name="horario" value="tarde"> Tarde</label>
+        <label class="opcion" for="noche"><input type="checkbox" id="noche" name="horario" value="noche"> Noche</label>
+      </div></fieldset>
+      <label for="comentarios">Comentarios adicionales</label>
+      <textarea id="comentarios" name="comentarios" rows="3" placeholder="¿Algo que debamos tener en cuenta?"></textarea>
+    </fieldset>
+    <p class="aceptacion"><input type="checkbox" id="aceptacion" name="aceptacion" required>
+      <label for="aceptacion">Acepto las <a href="normas.html" target="_blank" rel="noopener">normas del torneo</a>. <b>*</b></label></p>
+    <div class="acciones"><button type="submit">Inscribirme <span>→</span></button><button type="reset">Limpiar formulario</button></div>
+  </form>
+</dialog>
+<section class="confirmacion" role="status"><h2>Formulario validado</h2><p>Has completado la inscripción de prueba. Los datos se han comprobado en tu navegador.</p><a href="index.html">Nueva inscripción →</a></section>
+</main></body></html>
+
